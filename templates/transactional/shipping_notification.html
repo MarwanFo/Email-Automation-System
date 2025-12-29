@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  SHIPPING NOTIFICATION                                            ║
+    ║  Exciting, track-focused package update                           ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  COLOR PALETTE:                                                   ║
+    ║  • Progress Blue: #0ea5e9                                        ║
+    ║  • Sky Light: #e0f2fe                                            ║
+    ║  • Deep Navy: #0c4a6e                                            ║
+    ║  • Neutral Gray: #64748b                                         ║
+    ║  • White: #ffffff                                                ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .content {
+                padding: 24px !important;
+            }
+
+            .tracking-code {
+                font-size: 18px !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="margin: 0; padding: 0; background-color: #e0f2fe; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="display: none; max-height: 0px; overflow: hidden;">{{preheader_text}}</div>
+
+    <div style="background-color: #e0f2fe; padding: 40px 20px;">
+        <table class="container" cellpadding="0" cellspacing="0" border="0" width="600"
+            style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(14, 165, 233, 0.15);">
+
+            <!-- Header -->
+            <tr>
+                <td
+                    style="padding: 40px; background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">📦</div>
+                    <h1 style="margin: 0 0 8px; color: #ffffff; font-size: 28px; font-weight: 700;">Your Order is On Its
+                        Way!</h1>
+                    <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 15px;">Great news, {{first_name}} —
+                        your package has shipped</p>
+                </td>
+            </tr>
+
+            <!-- Tracking Info -->
+            <tr>
+                <td class="content" style="padding: 32px 40px;">
+                    <div
+                        style="background-color: #f0f9ff; border-radius: 12px; padding: 24px; text-align: center; border: 2px dashed #0ea5e9;">
+                        <p
+                            style="margin: 0 0 8px; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                            Tracking Number</p>
+                        <p class="tracking-code"
+                            style="margin: 0 0 16px; color: #0c4a6e; font-size: 22px; font-weight: 700; letter-spacing: 2px;">
+                            {{tracking_number}}</p>
+                        <a href="{{tracking_link}}"
+                            style="display: inline-block; padding: 12px 28px; background-color: #0ea5e9; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; border-radius: 6px;">Track
+                            Package</a>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Delivery Progress -->
+            <tr>
+                <td style="padding: 0 40px 32px;">
+                    <h2 style="margin: 0 0 20px; color: #0c4a6e; font-size: 16px; font-weight: 700;">Delivery Progress
+                    </h2>
+
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="width: 25%; text-align: center;">
+                                <div
+                                    style="width: 32px; height: 32px; background-color: #0ea5e9; border-radius: 50%; margin: 0 auto 8px; line-height: 32px; color: #ffffff; font-size: 14px;">
+                                    ✓</div>
+                                <p style="margin: 0; color: #0ea5e9; font-size: 11px; font-weight: 600;">Ordered</p>
+                            </td>
+                            <td style="width: 25%; text-align: center;">
+                                <div
+                                    style="width: 32px; height: 32px; background-color: #0ea5e9; border-radius: 50%; margin: 0 auto 8px; line-height: 32px; color: #ffffff; font-size: 14px;">
+                                    ✓</div>
+                                <p style="margin: 0; color: #0ea5e9; font-size: 11px; font-weight: 600;">Shipped</p>
+                            </td>
+                            <td style="width: 25%; text-align: center;">
+                                <div
+                                    style="width: 32px; height: 32px; background-color: #e2e8f0; border-radius: 50%; margin: 0 auto 8px; line-height: 32px; color: #94a3b8; font-size: 14px;">
+                                    3</div>
+                                <p style="margin: 0; color: #94a3b8; font-size: 11px; font-weight: 600;">In Transit</p>
+                            </td>
+                            <td style="width: 25%; text-align: center;">
+                                <div
+                                    style="width: 32px; height: 32px; background-color: #e2e8f0; border-radius: 50%; margin: 0 auto 8px; line-height: 32px; color: #94a3b8; font-size: 14px;">
+                                    4</div>
+                                <p style="margin: 0; color: #94a3b8; font-size: 11px; font-weight: 600;">Delivered</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="padding-top: 8px;">
+                                <div
+                                    style="height: 4px; background-color: #e2e8f0; border-radius: 2px; position: relative;">
+                                    <div
+                                        style="width: 50%; height: 4px; background-color: #0ea5e9; border-radius: 2px;">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Delivery Details -->
+            <tr>
+                <td style="padding: 0 40px 32px;">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                        style="background-color: #f8fafc; border-radius: 8px;">
+                        <tr>
+                            <td style="padding: 20px; border-bottom: 1px solid #e2e8f0;">
+                                <p style="margin: 0 0 4px; color: #64748b; font-size: 12px; text-transform: uppercase;">
+                                    Estimated Delivery</p>
+                                <p style="margin: 0; color: #0c4a6e; font-size: 18px; font-weight: 700;">
+                                    {{delivery_date}}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px; border-bottom: 1px solid #e2e8f0;">
+                                <p style="margin: 0 0 4px; color: #64748b; font-size: 12px; text-transform: uppercase;">
+                                    Carrier</p>
+                                <p style="margin: 0; color: #1e293b; font-size: 15px; font-weight: 600;">
+                                    {{carrier_name}}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px;">
+                                <p style="margin: 0 0 4px; color: #64748b; font-size: 12px; text-transform: uppercase;">
+                                    Shipping To</p>
+                                <p style="margin: 0; color: #1e293b; font-size: 15px; line-height: 1.5;">
+                                    {{shipping_address}}
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- What's in the Box -->
+            <tr>
+                <td style="padding: 0 40px 32px;">
+                    <h2
+                        style="margin: 0 0 16px; color: #0c4a6e; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                        What's In Your Package</h2>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="padding: 12px 0; border-bottom: 1px solid #e2e8f0;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="color: #1e293b; font-size: 14px;">{{item_1_name}}</td>
+                                        <td style="text-align: right; color: #64748b; font-size: 14px;">Qty:
+                                            {{item_1_qty}}</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px 0;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="color: #1e293b; font-size: 14px;">{{item_2_name}}</td>
+                                        <td style="text-align: right; color: #64748b; font-size: 14px;">Qty:
+                                            {{item_2_qty}}</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Help -->
+            <tr>
+                <td style="padding: 24px 40px; background-color: #f0f9ff; text-align: center;">
+                    <p style="margin: 0; color: #64748b; font-size: 14px;">
+                        Questions about your delivery? <a href="mailto:{{support_email}}"
+                            style="color: #0ea5e9; text-decoration: none; font-weight: 600;">Contact Support</a>
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style="padding: 24px 40px; background-color: #0c4a6e; text-align: center;">
+                    <p style="margin: 0 0 8px; color: #ffffff; font-size: 14px; font-weight: 600;">{{company}}</p>
+                    <p style="margin: 0; color: #7dd3fc; font-size: 11px;">
+                        <a href="{{unsubscribe_link}}"
+                            style="color: #7dd3fc; text-decoration: underline;">Unsubscribe</a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

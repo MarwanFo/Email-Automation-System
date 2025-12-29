@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  CORPORATE NEWSLETTER                                             ║
+    ║  Magazine-style multi-column internal news                        ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  COLOR PALETTE:                                                   ║
+    ║  • Brand Indigo: #4f46e5                                         ║
+    ║  • Dark Navy: #1e1b4b                                            ║
+    ║  • Warm Red: #dc2626                                             ║
+    ║  • Neutral Gray: #6b7280                                         ║
+    ║  • Light Lavender: #eef2ff                                       ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .content {
+                padding: 24px !important;
+            }
+
+            .article-col {
+                display: block !important;
+                width: 100% !important;
+                padding-right: 0 !important;
+                margin-bottom: 24px !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="margin: 0; padding: 0; background-color: #f5f5f5; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="display: none; max-height: 0px; overflow: hidden;">{{preheader_text}}</div>
+
+    <div style="background-color: #f5f5f5; padding: 40px 20px;">
+        <table class="container" cellpadding="0" cellspacing="0" border="0" width="600"
+            style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 0; overflow: hidden;">
+
+            <!-- Masthead -->
+            <tr>
+                <td
+                    style="padding: 32px 40px; background-color: #1e1b4b; text-align: center; border-bottom: 4px solid #4f46e5;">
+                    <p
+                        style="margin: 0 0 4px; color: #a5b4fc; font-size: 11px; letter-spacing: 3px; text-transform: uppercase;">
+                        {{company}}</p>
+                    <h1
+                        style="margin: 0; color: #ffffff; font-size: 32px; font-weight: 300; letter-spacing: 4px; text-transform: uppercase;">
+                        INSIDER</h1>
+                    <p style="margin: 8px 0 0; color: #a5b4fc; font-size: 12px;">{{newsletter_date}} • Issue
+                        {{issue_number}}</p>
+                </td>
+            </tr>
+
+            <!-- Featured Story -->
+            <tr>
+                <td class="content" style="padding: 40px;">
+                    <span
+                        style="display: inline-block; padding: 4px 12px; background-color: #dc2626; color: #ffffff; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; border-radius: 2px;">Featured</span>
+                    <h2
+                        style="margin: 16px 0 12px; color: #1e1b4b; font-size: 28px; font-weight: 700; line-height: 1.2;">
+                        {{featured_title}}</h2>
+                    <p style="margin: 0 0 20px; color: #6b7280; font-size: 16px; line-height: 1.7;">{{featured_summary}}
+                    </p>
+                    <a href="{{featured_link}}"
+                        style="color: #4f46e5; font-size: 14px; font-weight: 600; text-decoration: none;">Read the full
+                        story →</a>
+                </td>
+            </tr>
+
+            <!-- Divider -->
+            <tr>
+                <td style="padding: 0 40px;">
+                    <div style="height: 1px; background-color: #e5e7eb;"></div>
+                </td>
+            </tr>
+
+            <!-- Two Column Articles -->
+            <tr>
+                <td style="padding: 32px 40px;">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td class="article-col" style="width: 48%; vertical-align: top; padding-right: 4%;">
+                                <span
+                                    style="display: inline-block; padding: 3px 8px; background-color: #eef2ff; color: #4f46e5; font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 2px;">{{article_1_category}}</span>
+                                <h3
+                                    style="margin: 12px 0 8px; color: #1e1b4b; font-size: 18px; font-weight: 700; line-height: 1.3;">
+                                    {{article_1_title}}</h3>
+                                <p style="margin: 0 0 12px; color: #6b7280; font-size: 14px; line-height: 1.6;">
+                                    {{article_1_excerpt}}</p>
+                                <a href="{{article_1_link}}"
+                                    style="color: #4f46e5; font-size: 13px; font-weight: 600; text-decoration: none;">Read
+                                    more →</a>
+                            </td>
+                            <td class="article-col" style="width: 48%; vertical-align: top;">
+                                <span
+                                    style="display: inline-block; padding: 3px 8px; background-color: #eef2ff; color: #4f46e5; font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 2px;">{{article_2_category}}</span>
+                                <h3
+                                    style="margin: 12px 0 8px; color: #1e1b4b; font-size: 18px; font-weight: 700; line-height: 1.3;">
+                                    {{article_2_title}}</h3>
+                                <p style="margin: 0 0 12px; color: #6b7280; font-size: 14px; line-height: 1.6;">
+                                    {{article_2_excerpt}}</p>
+                                <a href="{{article_2_link}}"
+                                    style="color: #4f46e5; font-size: 13px; font-weight: 600; text-decoration: none;">Read
+                                    more →</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Quick Links Bar -->
+            <tr>
+                <td style="padding: 24px 40px; background-color: #eef2ff;">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="text-align: center;">
+                                <p style="margin: 0 0 12px; color: #1e1b4b; font-size: 14px; font-weight: 700;">Quick
+                                    Links</p>
+                                <a href="{{quick_link_1_url}}"
+                                    style="color: #4f46e5; font-size: 13px; text-decoration: none; margin: 0 12px;">{{quick_link_1_text}}</a>
+                                <span style="color: #c7d2fe;">|</span>
+                                <a href="{{quick_link_2_url}}"
+                                    style="color: #4f46e5; font-size: 13px; text-decoration: none; margin: 0 12px;">{{quick_link_2_text}}</a>
+                                <span style="color: #c7d2fe;">|</span>
+                                <a href="{{quick_link_3_url}}"
+                                    style="color: #4f46e5; font-size: 13px; text-decoration: none; margin: 0 12px;">{{quick_link_3_text}}</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Upcoming Events -->
+            <tr>
+                <td style="padding: 32px 40px;">
+                    <h3
+                        style="margin: 0 0 20px; color: #1e1b4b; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                        Upcoming Events</h3>
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td
+                                style="padding: 16px; background-color: #f9fafb; border-radius: 8px; border-left: 3px solid #4f46e5;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="width: 60px; vertical-align: top;">
+                                            <p
+                                                style="margin: 0; color: #4f46e5; font-size: 24px; font-weight: 700; line-height: 1;">
+                                                {{event_1_day}}</p>
+                                            <p
+                                                style="margin: 0; color: #6b7280; font-size: 11px; text-transform: uppercase;">
+                                                {{event_1_month}}</p>
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            <p
+                                                style="margin: 0 0 4px; color: #1e1b4b; font-size: 15px; font-weight: 600;">
+                                                {{event_1_title}}</p>
+                                            <p style="margin: 0; color: #6b7280; font-size: 13px;">{{event_1_time}} •
+                                                {{event_1_location}}</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 12px;"></td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="padding: 16px; background-color: #f9fafb; border-radius: 8px; border-left: 3px solid #4f46e5;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="width: 60px; vertical-align: top;">
+                                            <p
+                                                style="margin: 0; color: #4f46e5; font-size: 24px; font-weight: 700; line-height: 1;">
+                                                {{event_2_day}}</p>
+                                            <p
+                                                style="margin: 0; color: #6b7280; font-size: 11px; text-transform: uppercase;">
+                                                {{event_2_month}}</p>
+                                        </td>
+                                        <td style="vertical-align: top;">
+                                            <p
+                                                style="margin: 0 0 4px; color: #1e1b4b; font-size: 15px; font-weight: 600;">
+                                                {{event_2_title}}</p>
+                                            <p style="margin: 0; color: #6b7280; font-size: 13px;">{{event_2_time}} •
+                                                {{event_2_location}}</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style="padding: 32px 40px; background-color: #1e1b4b; text-align: center;">
+                    <p style="margin: 0 0 8px; color: #ffffff; font-size: 14px; font-weight: 600;">{{company}}</p>
+                    <p style="margin: 0 0 16px; color: #a5b4fc; font-size: 12px;">{{company_address}}</p>
+                    <p style="margin: 0; color: #6366f1; font-size: 11px;">
+                        <a href="{{unsubscribe_link}}"
+                            style="color: #a5b4fc; text-decoration: underline;">Unsubscribe</a>
+                        &nbsp;•&nbsp;
+                        <a href="{{preferences_link}}"
+                            style="color: #a5b4fc; text-decoration: underline;">Preferences</a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

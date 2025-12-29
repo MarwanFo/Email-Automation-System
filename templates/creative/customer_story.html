@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  CUSTOMER STORY / TESTIMONIAL SHOWCASE                            ║
+    ║  Story-driven, emotional, authentic design                        ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  COLOR PALETTE:                                                   ║
+    ║  • Warm Rose: #e11d48                                            ║
+    ║  • Soft Pink: #fdf2f8                                            ║
+    ║  • Deep Maroon: #881337                                          ║
+    ║  • Neutral Stone: #57534e                                        ║
+    ║  • Clean White: #ffffff                                          ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .content {
+                padding: 32px 24px !important;
+            }
+
+            .quote-text {
+                font-size: 20px !important;
+            }
+
+            .customer-photo {
+                width: 100px !important;
+                height: 100px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #fdf2f8; font-family: 'Georgia', 'Times New Roman', serif;">
+    <div style="display: none; max-height: 0px; overflow: hidden;">{{preheader_text}}</div>
+
+    <div style="background-color: #fdf2f8; padding: 40px 20px;">
+        <table class="container" cellpadding="0" cellspacing="0" border="0" width="600"
+            style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(225, 29, 72, 0.1);">
+
+            <!-- Header -->
+            <tr>
+                <td style="padding: 40px 40px 24px; text-align: center;">
+                    <span
+                        style="display: inline-block; padding: 6px 16px; background-color: #fdf2f8; color: #e11d48; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; border-radius: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">Customer
+                        Story</span>
+                    <h1
+                        style="margin: 20px 0 8px; color: #1c1917; font-size: 28px; font-weight: 400; line-height: 1.3;">
+                        {{story_headline}}
+                    </h1>
+                    <p style="margin: 0; color: #78716c; font-size: 15px;">{{story_subheadline}}</p>
+                </td>
+            </tr>
+
+            <!-- Customer Photo & Info -->
+            <tr>
+                <td style="padding: 0 40px 32px; text-align: center;">
+                    <img class="customer-photo" src="{{customer_photo_url}}" alt="{{customer_name}}"
+                        style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fdf2f8; box-shadow: 0 8px 24px rgba(0,0,0,0.1);"
+                        onerror="this.style.backgroundColor='#e11d48'; this.style.padding='40px'; this.alt='👤'">
+                    <h2
+                        style="margin: 20px 0 4px; color: #1c1917; font-size: 22px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        {{customer_name}}</h2>
+                    <p style="margin: 0; color: #78716c; font-size: 14px;">{{customer_title}} at {{customer_company}}
+                    </p>
+                    <p style="margin: 4px 0 0; color: #a8a29e; font-size: 13px;">{{customer_location}}</p>
+                </td>
+            </tr>
+
+            <!-- Quote -->
+            <tr>
+                <td style="padding: 32px 40px; background-color: #fdf2f8;">
+                    <div style="position: relative;">
+                        <span
+                            style="position: absolute; top: -20px; left: -10px; font-size: 72px; color: #fce7f3; font-family: Georgia, serif;">"</span>
+                        <p class="quote-text"
+                            style="margin: 0; color: #881337; font-size: 24px; line-height: 1.6; font-style: italic; position: relative; z-index: 1;">
+                            {{customer_quote}}
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- The Story -->
+            <tr>
+                <td class="content" style="padding: 40px;">
+                    <h3
+                        style="margin: 0 0 16px; color: #e11d48; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        The Challenge</h3>
+                    <p style="margin: 0 0 28px; color: #57534e; font-size: 16px; line-height: 1.8;">
+                        {{challenge_text}}
+                    </p>
+
+                    <h3
+                        style="margin: 0 0 16px; color: #e11d48; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        The Solution</h3>
+                    <p style="margin: 0 0 28px; color: #57534e; font-size: 16px; line-height: 1.8;">
+                        {{solution_text}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Results -->
+            <tr>
+                <td style="padding: 0 40px 40px;">
+                    <h3
+                        style="margin: 0 0 20px; color: #e11d48; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        The Results</h3>
+
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td
+                                style="width: 33%; text-align: center; padding: 20px; background-color: #fdf2f8; border-radius: 12px 0 0 12px;">
+                                <p
+                                    style="margin: 0; color: #e11d48; font-size: 32px; font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{result_1_value}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #78716c; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{result_1_label}}</p>
+                            </td>
+                            <td style="width: 33%; text-align: center; padding: 20px; background-color: #fce7f3;">
+                                <p
+                                    style="margin: 0; color: #e11d48; font-size: 32px; font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{result_2_value}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #78716c; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{result_2_label}}</p>
+                            </td>
+                            <td
+                                style="width: 33%; text-align: center; padding: 20px; background-color: #fdf2f8; border-radius: 0 12px 12px 0;">
+                                <p
+                                    style="margin: 0; color: #e11d48; font-size: 32px; font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{result_3_value}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #78716c; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{result_3_label}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- CTA -->
+            <tr>
+                <td
+                    style="padding: 32px 40px; background: linear-gradient(135deg, #e11d48 0%, #881337 100%); text-align: center;">
+                    <p style="margin: 0 0 20px; color: #ffffff; font-size: 18px; font-weight: 400;">{{cta_message}}</p>
+                    <a href="{{cta_link}}"
+                        style="display: inline-block; padding: 16px 40px; background-color: #ffffff; color: #e11d48; text-decoration: none; font-size: 15px; font-weight: 700; border-radius: 8px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">{{cta_text}}</a>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style="padding: 32px 40px; text-align: center;">
+                    <p
+                        style="margin: 0 0 8px; color: #1c1917; font-size: 14px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        {{company}}</p>
+                    <p style="margin: 0 0 16px; color: #a8a29e; font-size: 12px;">{{company_address}}</p>
+                    <p style="margin: 0; color: #a8a29e; font-size: 11px;">
+                        <a href="{{unsubscribe_link}}"
+                            style="color: #a8a29e; text-decoration: underline;">Unsubscribe</a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

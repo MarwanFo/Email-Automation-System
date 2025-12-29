@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  FEEDBACK & SURVEY REQUEST                                        ║
+    ║  Appreciative, easy-to-respond survey request                     ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  COLOR PALETTE:                                                   ║
+    ║  • Warm Yellow: #eab308                                          ║
+    ║  • Honey Gold: #ca8a04                                           ║
+    ║  • Soft Cream: #fefce8                                           ║
+    ║  • Deep Brown: #713f12                                           ║
+    ║  • White: #ffffff                                                ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .content {
+                padding: 24px !important;
+            }
+
+            .star-rating td {
+                padding: 4px !important;
+            }
+
+            .star {
+                font-size: 28px !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="margin: 0; padding: 0; background-color: #fefce8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="display: none; max-height: 0px; overflow: hidden;">{{preheader_text}}</div>
+
+    <div style="background-color: #fefce8; padding: 40px 20px;">
+        <table class="container" cellpadding="0" cellspacing="0" border="0" width="600"
+            style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(234, 179, 8, 0.2);">
+
+            <!-- Header -->
+            <tr>
+                <td
+                    style="padding: 48px 40px; background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">💭</div>
+                    <h1 style="margin: 0 0 8px; color: #ffffff; font-size: 28px; font-weight: 700;">We'd Love Your
+                        Feedback</h1>
+                    <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 15px;">Your opinion matters to us,
+                        {{first_name}}</p>
+                </td>
+            </tr>
+
+            <!-- Message -->
+            <tr>
+                <td class="content" style="padding: 40px;">
+                    <p style="margin: 0 0 24px; color: #374151; font-size: 16px; line-height: 1.7;">
+                        {{feedback_message}}
+                    </p>
+
+                    <p style="margin: 0 0 8px; color: #713f12; font-size: 15px; font-weight: 600; text-align: center;">
+                        How would you rate your experience?
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Star Rating -->
+            <tr>
+                <td style="padding: 0 40px 32px; text-align: center;">
+                    <table class="star-rating" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                        <tr>
+                            <td style="padding: 8px;">
+                                <a href="{{rating_1_link}}" style="text-decoration: none;">
+                                    <span class="star" style="font-size: 36px; color: #eab308;">⭐</span>
+                                </a>
+                            </td>
+                            <td style="padding: 8px;">
+                                <a href="{{rating_2_link}}" style="text-decoration: none;">
+                                    <span class="star" style="font-size: 36px; color: #eab308;">⭐</span>
+                                </a>
+                            </td>
+                            <td style="padding: 8px;">
+                                <a href="{{rating_3_link}}" style="text-decoration: none;">
+                                    <span class="star" style="font-size: 36px; color: #eab308;">⭐</span>
+                                </a>
+                            </td>
+                            <td style="padding: 8px;">
+                                <a href="{{rating_4_link}}" style="text-decoration: none;">
+                                    <span class="star" style="font-size: 36px; color: #eab308;">⭐</span>
+                                </a>
+                            </td>
+                            <td style="padding: 8px;">
+                                <a href="{{rating_5_link}}" style="text-decoration: none;">
+                                    <span class="star" style="font-size: 36px; color: #eab308;">⭐</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: left;">
+                                <p style="margin: 8px 0 0; color: #9ca3af; font-size: 12px;">Not satisfied</p>
+                            </td>
+                            <td></td>
+                            <td colspan="2" style="text-align: right;">
+                                <p style="margin: 8px 0 0; color: #9ca3af; font-size: 12px;">Very satisfied</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Full Survey CTA -->
+            <tr>
+                <td style="padding: 0 40px 40px; text-align: center;">
+                    <p style="margin: 0 0 16px; color: #6b7280; font-size: 14px;">Or take our detailed survey:</p>
+                    <a href="{{survey_link}}"
+                        style="display: inline-block; padding: 16px 40px; background-color: #eab308; color: #713f12; text-decoration: none; font-size: 15px; font-weight: 700; border-radius: 8px;">Take
+                        the Survey ({{survey_time}})</a>
+                </td>
+            </tr>
+
+            <!-- Incentive -->
+            <tr>
+                <td style="padding: 24px 40px; background-color: #fefce8; text-align: center;">
+                    <div
+                        style="display: inline-block; background-color: #ffffff; border-radius: 12px; padding: 20px 32px; border: 2px dashed #eab308;">
+                        <p
+                            style="margin: 0 0 4px; color: #6b7280; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                            As a thank you</p>
+                        <p style="margin: 0; color: #713f12; font-size: 20px; font-weight: 700;">{{incentive_offer}}</p>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Why It Matters -->
+            <tr>
+                <td style="padding: 32px 40px;">
+                    <h3
+                        style="margin: 0 0 16px; color: #713f12; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                        Why Your Feedback Matters</h3>
+                    <p style="margin: 0; color: #4b5563; font-size: 15px; line-height: 1.7;">
+                        {{why_feedback_matters}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style="padding: 24px 40px; background-color: #713f12; text-align: center;">
+                    <p style="margin: 0 0 8px; color: #ffffff; font-size: 14px; font-weight: 600;">{{company}}</p>
+                    <p style="margin: 0 0 12px; color: #fde68a; font-size: 12px;">Thank you for being a valued customer!
+                    </p>
+                    <p style="margin: 0; color: #ca8a04; font-size: 11px;">
+                        <a href="{{unsubscribe_link}}"
+                            style="color: #ca8a04; text-decoration: underline;">Unsubscribe</a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

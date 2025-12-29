@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  QUARTERLY BUSINESS REPORT                                        ║
+    ║  Clean, data-driven performance updates                           ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  COLOR PALETTE:                                                   ║
+    ║  • Trust Blue: #1e40af                                           ║
+    ║  • Success Green: #059669                                        ║
+    ║  • Warm Orange: #ea580c                                          ║
+    ║  • Neutral Slate: #475569                                        ║
+    ║  • Clean White: #ffffff                                          ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .header {
+                padding: 32px 24px !important;
+            }
+
+            .content {
+                padding: 24px !important;
+            }
+
+            .stat-cell {
+                display: block !important;
+                width: 100% !important;
+                margin-bottom: 16px !important;
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="margin: 0; padding: 0; background-color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <!-- Preheader -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+        {{preheader_text}}
+    </div>
+
+    <div style="background-color: #f8fafc; padding: 40px 20px;">
+        <table class="container" cellpadding="0" cellspacing="0" border="0" width="600"
+            style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+
+            <!-- Header -->
+            <tr>
+                <td class="header" style="padding: 40px; background-color: #1e40af; text-align: center;">
+                    <p
+                        style="margin: 0 0 8px; color: rgba(255,255,255,0.7); font-size: 12px; letter-spacing: 2px; text-transform: uppercase;">
+                        {{company}}
+                    </p>
+                    <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: 700;">
+                        {{quarter}} Performance Report
+                    </h1>
+                    <p style="margin: 12px 0 0; color: rgba(255,255,255,0.8); font-size: 14px;">
+                        {{report_period}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Executive Summary -->
+            <tr>
+                <td class="content" style="padding: 40px;">
+                    <h2 style="margin: 0 0 16px; color: #1e293b; font-size: 18px; font-weight: 700;">
+                        Executive Summary
+                    </h2>
+                    <p style="margin: 0; color: #475569; font-size: 16px; line-height: 1.7;">
+                        {{executive_summary}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Key Metrics -->
+            <tr>
+                <td style="padding: 0 40px 40px;">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                        style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
+                        <tr>
+                            <td class="stat-cell"
+                                style="width: 25%; padding: 24px; text-align: center; border-right: 1px solid #e2e8f0; background-color: #f8fafc;">
+                                <p style="margin: 0; color: #1e40af; font-size: 32px; font-weight: 800;">{{revenue}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    Revenue</p>
+                                <p style="margin: 4px 0 0; color: #059669; font-size: 12px; font-weight: 600;">
+                                    {{revenue_change}}</p>
+                            </td>
+                            <td class="stat-cell"
+                                style="width: 25%; padding: 24px; text-align: center; border-right: 1px solid #e2e8f0; background-color: #f8fafc;">
+                                <p style="margin: 0; color: #1e40af; font-size: 32px; font-weight: 800;">{{customers}}
+                                </p>
+                                <p
+                                    style="margin: 8px 0 0; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    Customers</p>
+                                <p style="margin: 4px 0 0; color: #059669; font-size: 12px; font-weight: 600;">
+                                    {{customers_change}}</p>
+                            </td>
+                            <td class="stat-cell"
+                                style="width: 25%; padding: 24px; text-align: center; border-right: 1px solid #e2e8f0; background-color: #f8fafc;">
+                                <p style="margin: 0; color: #1e40af; font-size: 32px; font-weight: 800;">{{nps_score}}
+                                </p>
+                                <p
+                                    style="margin: 8px 0 0; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    NPS Score</p>
+                                <p style="margin: 4px 0 0; color: #059669; font-size: 12px; font-weight: 600;">
+                                    {{nps_change}}</p>
+                            </td>
+                            <td class="stat-cell"
+                                style="width: 25%; padding: 24px; text-align: center; background-color: #f8fafc;">
+                                <p style="margin: 0; color: #1e40af; font-size: 32px; font-weight: 800;">{{team_size}}
+                                </p>
+                                <p
+                                    style="margin: 8px 0 0; color: #64748b; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    Team Size</p>
+                                <p style="margin: 4px 0 0; color: #059669; font-size: 12px; font-weight: 600;">
+                                    {{team_change}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Key Achievements -->
+            <tr>
+                <td style="padding: 0 40px 40px;">
+                    <h2 style="margin: 0 0 20px; color: #1e293b; font-size: 18px; font-weight: 700;">
+                        Key Achievements
+                    </h2>
+
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td
+                                style="padding: 16px 20px; background-color: #f0fdf4; border-left: 4px solid #059669; border-radius: 0 8px 8px 0; margin-bottom: 12px;">
+                                <p style="margin: 0; color: #166534; font-size: 15px; font-weight: 600;">
+                                    {{achievement_1}}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 12px;"></td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="padding: 16px 20px; background-color: #f0fdf4; border-left: 4px solid #059669; border-radius: 0 8px 8px 0;">
+                                <p style="margin: 0; color: #166534; font-size: 15px; font-weight: 600;">
+                                    {{achievement_2}}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 12px;"></td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="padding: 16px 20px; background-color: #f0fdf4; border-left: 4px solid #059669; border-radius: 0 8px 8px 0;">
+                                <p style="margin: 0; color: #166534; font-size: 15px; font-weight: 600;">
+                                    {{achievement_3}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Areas of Focus -->
+            <tr>
+                <td style="padding: 0 40px 40px;">
+                    <h2 style="margin: 0 0 20px; color: #1e293b; font-size: 18px; font-weight: 700;">
+                        Next Quarter Focus
+                    </h2>
+
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td
+                                style="padding: 16px 20px; background-color: #eff6ff; border-left: 4px solid #1e40af; border-radius: 0 8px 8px 0;">
+                                <p style="margin: 0; color: #1e40af; font-size: 15px; font-weight: 600;">{{focus_1}}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 12px;"></td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="padding: 16px 20px; background-color: #eff6ff; border-left: 4px solid #1e40af; border-radius: 0 8px 8px 0;">
+                                <p style="margin: 0; color: #1e40af; font-size: 15px; font-weight: 600;">{{focus_2}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- CTA -->
+            <tr>
+                <td
+                    style="padding: 40px; background-color: #f8fafc; text-align: center; border-top: 1px solid #e2e8f0;">
+                    <p style="margin: 0 0 20px; color: #475569; font-size: 15px;">
+                        {{cta_message}}
+                    </p>
+                    <a href="{{cta_link}}"
+                        style="display: inline-block; padding: 14px 32px; background-color: #1e40af; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; border-radius: 6px;">
+                        {{cta_text}}
+                    </a>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style="padding: 24px 40px; background-color: #1e293b; text-align: center;">
+                    <p style="margin: 0 0 8px; color: #ffffff; font-size: 13px; font-weight: 600;">{{company}}</p>
+                    <p style="margin: 0 0 12px; color: #94a3b8; font-size: 11px;">{{company_address}}</p>
+                    <p style="margin: 0; color: #64748b; font-size: 11px;">
+                        <a href="{{unsubscribe_link}}"
+                            style="color: #64748b; text-decoration: underline;">Unsubscribe</a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

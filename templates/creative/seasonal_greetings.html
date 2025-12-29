@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  SEASONAL HOLIDAY GREETINGS                                       ║
+    ║  Festive but professional holiday wishes                          ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  COLOR PALETTE:                                                   ║
+    ║  • Festive Red: #b91c1c                                          ║
+    ║  • Pine Green: #166534                                           ║
+    ║  • Warm Gold: #ca8a04                                            ║
+    ║  • Snow White: #fafafa                                           ║
+    ║  • Cozy Cream: #fef3c7                                           ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .content {
+                padding: 32px 24px !important;
+            }
+
+            .greeting-text {
+                font-size: 28px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #fef3c7; font-family: 'Georgia', 'Times New Roman', serif;">
+    <div style="display: none; max-height: 0px; overflow: hidden;">{{preheader_text}}</div>
+
+    <div style="background-color: #fef3c7; padding: 40px 20px;">
+        <table class="container" cellpadding="0" cellspacing="0" border="0" width="600"
+            style="max-width: 600px; margin: 0 auto; background-color: #fafafa; border-radius: 0; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.1);">
+
+            <!-- Decorative Top -->
+            <tr>
+                <td style="height: 8px; background: linear-gradient(90deg, #b91c1c 0%, #166534 50%, #b91c1c 100%);">
+                </td>
+            </tr>
+
+            <!-- Header -->
+            <tr>
+                <td
+                    style="padding: 48px 40px; text-align: center; background: linear-gradient(180deg, #fafafa 0%, #f5f5f4 100%);">
+                    <div style="font-size: 64px; margin-bottom: 20px;">{{seasonal_emoji}}</div>
+                    <h1 class="greeting-text"
+                        style="margin: 0 0 8px; color: #166534; font-size: 36px; font-weight: 400; font-style: italic;">
+                        {{greeting_headline}}
+                    </h1>
+                    <p style="margin: 0; color: #b91c1c; font-size: 16px; letter-spacing: 2px;">{{greeting_subheadline}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Personal Message -->
+            <tr>
+                <td class="content" style="padding: 40px;">
+                    <p style="margin: 0 0 24px; color: #44403c; font-size: 18px; line-height: 1.8; text-align: center;">
+                        Dear {{recipient_name}},
+                    </p>
+                    <p style="margin: 0 0 24px; color: #57534e; font-size: 17px; line-height: 1.8;">
+                        {{personal_message}}
+                    </p>
+                    <p style="margin: 0; color: #57534e; font-size: 17px; line-height: 1.8;">
+                        {{closing_message}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Decorative Divider -->
+            <tr>
+                <td style="padding: 0 40px;">
+                    <div style="text-align: center; color: #ca8a04; font-size: 20px; letter-spacing: 8px;">✦ ❄ ✦</div>
+                </td>
+            </tr>
+
+            <!-- Year in Review / Highlights -->
+            <tr>
+                <td style="padding: 40px;">
+                    <h2
+                        style="margin: 0 0 24px; color: #166534; font-size: 18px; font-weight: 600; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        {{highlights_title}}</h2>
+
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="width: 33%; text-align: center; padding: 16px;">
+                                <p
+                                    style="margin: 0; color: #b91c1c; font-size: 32px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{highlight_1_value}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #78716c; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{highlight_1_label}}</p>
+                            </td>
+                            <td
+                                style="width: 33%; text-align: center; padding: 16px; border-left: 1px solid #e7e5e4; border-right: 1px solid #e7e5e4;">
+                                <p
+                                    style="margin: 0; color: #166534; font-size: 32px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{highlight_2_value}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #78716c; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{highlight_2_label}}</p>
+                            </td>
+                            <td style="width: 33%; text-align: center; padding: 16px;">
+                                <p
+                                    style="margin: 0; color: #ca8a04; font-size: 32px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{highlight_3_value}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #78716c; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{highlight_3_label}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Looking Ahead -->
+            <tr>
+                <td style="padding: 32px 40px; background-color: #166534; text-align: center;">
+                    <h3
+                        style="margin: 0 0 12px; color: #ffffff; font-size: 20px; font-weight: 400; font-style: italic;">
+                        {{looking_ahead_title}}</h3>
+                    <p style="margin: 0; color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.6;">
+                        {{looking_ahead_message}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Signature -->
+            <tr>
+                <td style="padding: 40px; text-align: center;">
+                    <p style="margin: 0 0 8px; color: #57534e; font-size: 16px; font-style: italic;">With warm wishes,
+                    </p>
+                    <p
+                        style="margin: 0 0 4px; color: #292524; font-size: 18px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        {{sender_name}}</p>
+                    <p style="margin: 0; color: #78716c; font-size: 14px;">{{sender_title}}, {{company}}</p>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style="padding: 24px 40px; background-color: #292524; text-align: center;">
+                    <p style="margin: 0 0 8px; color: #fafafa; font-size: 13px; font-weight: 600;">{{company}}</p>
+                    <p style="margin: 0 0 12px; color: #a8a29e; font-size: 11px;">{{company_address}}</p>
+                    <p style="margin: 0; color: #78716c; font-size: 10px;">
+                        <a href="{{unsubscribe_link}}"
+                            style="color: #78716c; text-decoration: underline;">Unsubscribe</a>
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Decorative Bottom -->
+            <tr>
+                <td style="height: 8px; background: linear-gradient(90deg, #b91c1c 0%, #166534 50%, #b91c1c 100%);">
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

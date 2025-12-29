@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  WELCOME SERIES                                                   ║
+    ║  Warm, friendly onboarding for new customers                      ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  COLOR PALETTE:                                                   ║
+    ║  • Friendly Green: #10b981                                       ║
+    ║  • Soft Teal: #14b8a6                                            ║
+    ║  • Warm Cream: #fefce8                                           ║
+    ║  • Forest Dark: #064e3b                                          ║
+    ║  • Natural Gray: #6b7280                                         ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .content {
+                padding: 24px !important;
+            }
+
+            .step-cell {
+                display: block !important;
+                width: 100% !important;
+                margin-bottom: 16px !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="margin: 0; padding: 0; background-color: #ecfdf5; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="display: none; max-height: 0px; overflow: hidden;">{{preheader_text}}</div>
+
+    <div style="background-color: #ecfdf5; padding: 40px 20px;">
+        <table class="container" cellpadding="0" cellspacing="0" border="0" width="600"
+            style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(16, 185, 129, 0.15);">
+
+            <!-- Header -->
+            <tr>
+                <td
+                    style="padding: 48px 40px; background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%); text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 20px;">👋</div>
+                    <h1 style="margin: 0 0 8px; color: #ffffff; font-size: 32px; font-weight: 700;">Welcome to
+                        {{company}}!</h1>
+                    <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 16px;">We're thrilled to have you
+                        here, {{first_name}}.</p>
+                </td>
+            </tr>
+
+            <!-- Personal Welcome -->
+            <tr>
+                <td class="content" style="padding: 40px;">
+                    <p style="margin: 0 0 20px; color: #374151; font-size: 17px; line-height: 1.7;">
+                        {{welcome_message}}
+                    </p>
+                    <p style="margin: 0; color: #374151; font-size: 17px; line-height: 1.7;">
+                        {{value_proposition}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Getting Started Steps -->
+            <tr>
+                <td style="padding: 0 40px 40px;">
+                    <h2
+                        style="margin: 0 0 24px; color: #064e3b; font-size: 20px; font-weight: 700; text-align: center;">
+                        Getting Started is Easy</h2>
+
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td class="step-cell"
+                                style="width: 32%; text-align: center; vertical-align: top; padding: 0 8px;">
+                                <div
+                                    style="width: 48px; height: 48px; background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%); border-radius: 50%; margin: 0 auto 16px; line-height: 48px; color: #ffffff; font-size: 20px; font-weight: 700;">
+                                    1</div>
+                                <h3 style="margin: 0 0 8px; color: #064e3b; font-size: 15px; font-weight: 600;">
+                                    {{step_1_title}}</h3>
+                                <p style="margin: 0; color: #6b7280; font-size: 13px; line-height: 1.5;">
+                                    {{step_1_description}}</p>
+                            </td>
+                            <td class="step-cell"
+                                style="width: 32%; text-align: center; vertical-align: top; padding: 0 8px;">
+                                <div
+                                    style="width: 48px; height: 48px; background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%); border-radius: 50%; margin: 0 auto 16px; line-height: 48px; color: #ffffff; font-size: 20px; font-weight: 700;">
+                                    2</div>
+                                <h3 style="margin: 0 0 8px; color: #064e3b; font-size: 15px; font-weight: 600;">
+                                    {{step_2_title}}</h3>
+                                <p style="margin: 0; color: #6b7280; font-size: 13px; line-height: 1.5;">
+                                    {{step_2_description}}</p>
+                            </td>
+                            <td class="step-cell"
+                                style="width: 32%; text-align: center; vertical-align: top; padding: 0 8px;">
+                                <div
+                                    style="width: 48px; height: 48px; background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%); border-radius: 50%; margin: 0 auto 16px; line-height: 48px; color: #ffffff; font-size: 20px; font-weight: 700;">
+                                    3</div>
+                                <h3 style="margin: 0 0 8px; color: #064e3b; font-size: 15px; font-weight: 600;">
+                                    {{step_3_title}}</h3>
+                                <p style="margin: 0; color: #6b7280; font-size: 13px; line-height: 1.5;">
+                                    {{step_3_description}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Welcome Gift -->
+            <tr>
+                <td style="padding: 32px 40px; background-color: #fefce8; text-align: center;">
+                    <p
+                        style="margin: 0 0 8px; color: #6b7280; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                        Your Welcome Gift</p>
+                    <h3 style="margin: 0 0 8px; color: #064e3b; font-size: 24px; font-weight: 700;">{{gift_headline}}
+                    </h3>
+                    <p style="margin: 0 0 20px; color: #6b7280; font-size: 15px;">{{gift_description}}</p>
+                    <div
+                        style="display: inline-block; background-color: #064e3b; border-radius: 8px; padding: 12px 24px;">
+                        <p style="margin: 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: 2px;">
+                            {{gift_code}}</p>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- CTA -->
+            <tr>
+                <td style="padding: 40px; text-align: center;">
+                    <a href="{{cta_link}}"
+                        style="display: inline-block; padding: 18px 48px; background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%); color: #ffffff; text-decoration: none; font-size: 16px; font-weight: 700; border-radius: 8px; box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);">
+                        {{cta_text}}
+                    </a>
+                </td>
+            </tr>
+
+            <!-- Help Resources -->
+            <tr>
+                <td style="padding: 0 40px 40px;">
+                    <div style="background-color: #f9fafb; border-radius: 12px; padding: 24px; text-align: center;">
+                        <p style="margin: 0 0 12px; color: #374151; font-size: 15px; font-weight: 600;">Need help? We've
+                            got you covered.</p>
+                        <p style="margin: 0; color: #6b7280; font-size: 14px;">
+                            <a href="{{help_link}}"
+                                style="color: #10b981; text-decoration: none; font-weight: 600;">Help Center</a>
+                            &nbsp;•&nbsp;
+                            <a href="{{chat_link}}"
+                                style="color: #10b981; text-decoration: none; font-weight: 600;">Live Chat</a>
+                            &nbsp;•&nbsp;
+                            <a href="mailto:{{support_email}}"
+                                style="color: #10b981; text-decoration: none; font-weight: 600;">Email Us</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style="padding: 28px 40px; background-color: #064e3b; text-align: center;">
+                    <p style="margin: 0 0 8px; color: #ffffff; font-size: 14px; font-weight: 600;">{{company}}</p>
+                    <p style="margin: 0 0 16px; color: #6ee7b7; font-size: 12px;">{{company_address}}</p>
+                    <p style="margin: 0; color: #6ee7b7; font-size: 11px;">
+                        <a href="{{unsubscribe_link}}"
+                            style="color: #6ee7b7; text-decoration: underline;">Unsubscribe</a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

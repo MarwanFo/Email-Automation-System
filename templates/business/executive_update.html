@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  EXECUTIVE LEADERSHIP UPDATE                                      ║
+    ║  Sophisticated communications from company leadership             ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  COLOR PALETTE:                                                   ║
+    ║  • Navy Primary: #1a2744                                         ║
+    ║  • Gold Accent: #c9a962                                          ║
+    ║  • Charcoal Text: #374151                                        ║
+    ║  • Warm Gray: #6b7280                                            ║
+    ║  • Cream Background: #faf9f7                                     ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+                padding: 20px !important;
+            }
+
+            .header {
+                padding: 32px 24px !important;
+            }
+
+            .content {
+                padding: 28px 24px !important;
+            }
+
+            .metric-card {
+                display: block !important;
+                width: 100% !important;
+                margin-bottom: 16px !important;
+            }
+
+            .executive-photo {
+                width: 64px !important;
+                height: 64px !important;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .wrapper {
+                background-color: #111827 !important;
+            }
+
+            .container {
+                background-color: #1f2937 !important;
+            }
+
+            .content,
+            .signature-section {
+                background-color: #1f2937 !important;
+            }
+
+            .main-text {
+                color: #e5e7eb !important;
+            }
+
+            .section-title {
+                color: #f3f4f6 !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f3f4f6; font-family: 'Georgia', 'Times New Roman', serif;">
+    <!-- Preheader -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+        {{preheader_text}}
+    </div>
+
+    <div class="wrapper" style="background-color: #f3f4f6; padding: 48px 20px;">
+        <table class="container" cellpadding="0" cellspacing="0" border="0" width="600"
+            style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);">
+
+            <!-- Header with Navy Background -->
+            <tr>
+                <td class="header"
+                    style="background: linear-gradient(135deg, #1a2744 0%, #243b5f 100%); padding: 48px 40px; text-align: center;">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="text-align: center;">
+                                <!-- Company Logo Placeholder -->
+                                <div
+                                    style="width: 56px; height: 56px; background-color: #c9a962; border-radius: 8px; margin: 0 auto 20px; display: inline-block;">
+                                    <span
+                                        style="color: #1a2744; font-size: 24px; font-weight: bold; line-height: 56px;">{{company_initial}}</span>
+                                </div>
+                                <h1
+                                    style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">
+                                    Leadership Update
+                                </h1>
+                                <p style="margin: 12px 0 0; color: #c9a962; font-size: 14px; letter-spacing: 1px;">
+                                    {{update_period}}
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Executive Greeting -->
+            <tr>
+                <td style="padding: 40px 40px 0; background-color: #faf9f7;">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="vertical-align: top; width: 80px;">
+                                <img class="executive-photo" src="{{executive_photo_url}}" alt="{{executive_name}}"
+                                    style="width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 3px solid #c9a962;"
+                                    onerror="this.style.display='none'">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 20px;">
+                                <p
+                                    style="margin: 0; color: #374151; font-size: 20px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{executive_name}}
+                                </p>
+                                <p style="margin: 4px 0 0; color: #6b7280; font-size: 14px;">
+                                    {{executive_title}}, {{company}}
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Personal Message -->
+            <tr>
+                <td class="content" style="padding: 32px 40px; background-color: #faf9f7;">
+                    <p style="margin: 0 0 20px; color: #374151; font-size: 17px; line-height: 1.75;">
+                        Dear {{recipient_title}} {{last_name}},
+                    </p>
+                    <p class="main-text" style="margin: 0 0 20px; color: #374151; font-size: 17px; line-height: 1.75;">
+                        {{opening_message}}
+                    </p>
+                    <p class="main-text" style="margin: 0; color: #374151; font-size: 17px; line-height: 1.75;">
+                        {{personal_note}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Key Metrics Section -->
+            <tr>
+                <td style="padding: 0 40px 32px; background-color: #faf9f7;">
+                    <h2 class="section-title"
+                        style="margin: 0 0 20px; color: #1a2744; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        Key Performance Highlights
+                    </h2>
+
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td class="metric-card"
+                                style="width: 31%; background-color: #ffffff; border-radius: 8px; padding: 24px; text-align: center; border: 1px solid #e5e7eb;">
+                                <p
+                                    style="margin: 0; color: #c9a962; font-size: 28px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{metric_1_value}}
+                                </p>
+                                <p
+                                    style="margin: 8px 0 0; color: #6b7280; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{metric_1_label}}
+                                </p>
+                            </td>
+                            <td style="width: 3.5%;"></td>
+                            <td class="metric-card"
+                                style="width: 31%; background-color: #ffffff; border-radius: 8px; padding: 24px; text-align: center; border: 1px solid #e5e7eb;">
+                                <p
+                                    style="margin: 0; color: #c9a962; font-size: 28px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{metric_2_value}}
+                                </p>
+                                <p
+                                    style="margin: 8px 0 0; color: #6b7280; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{metric_2_label}}
+                                </p>
+                            </td>
+                            <td style="width: 3.5%;"></td>
+                            <td class="metric-card"
+                                style="width: 31%; background-color: #ffffff; border-radius: 8px; padding: 24px; text-align: center; border: 1px solid #e5e7eb;">
+                                <p
+                                    style="margin: 0; color: #c9a962; font-size: 28px; font-weight: 700; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{metric_3_value}}
+                                </p>
+                                <p
+                                    style="margin: 8px 0 0; color: #6b7280; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">
+                                    {{metric_3_label}}
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Strategic Priorities -->
+            <tr>
+                <td style="padding: 32px 40px; background-color: #ffffff;">
+                    <h2 class="section-title"
+                        style="margin: 0 0 24px; color: #1a2744; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        Our Strategic Priorities
+                    </h2>
+
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="padding: 16px 0; border-bottom: 1px solid #e5e7eb;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="width: 32px; vertical-align: top;">
+                                            <span
+                                                style="display: inline-block; width: 24px; height: 24px; background-color: #1a2744; color: #c9a962; border-radius: 50%; text-align: center; line-height: 24px; font-size: 12px; font-weight: 600;">1</span>
+                                        </td>
+                                        <td>
+                                            <p style="margin: 0; color: #374151; font-size: 16px; font-weight: 600;">
+                                                {{priority_1_title}}</p>
+                                            <p
+                                                style="margin: 6px 0 0; color: #6b7280; font-size: 14px; line-height: 1.6;">
+                                                {{priority_1_description}}</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 16px 0; border-bottom: 1px solid #e5e7eb;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="width: 32px; vertical-align: top;">
+                                            <span
+                                                style="display: inline-block; width: 24px; height: 24px; background-color: #1a2744; color: #c9a962; border-radius: 50%; text-align: center; line-height: 24px; font-size: 12px; font-weight: 600;">2</span>
+                                        </td>
+                                        <td>
+                                            <p style="margin: 0; color: #374151; font-size: 16px; font-weight: 600;">
+                                                {{priority_2_title}}</p>
+                                            <p
+                                                style="margin: 6px 0 0; color: #6b7280; font-size: 14px; line-height: 1.6;">
+                                                {{priority_2_description}}</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 16px 0;">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="width: 32px; vertical-align: top;">
+                                            <span
+                                                style="display: inline-block; width: 24px; height: 24px; background-color: #1a2744; color: #c9a962; border-radius: 50%; text-align: center; line-height: 24px; font-size: 12px; font-weight: 600;">3</span>
+                                        </td>
+                                        <td>
+                                            <p style="margin: 0; color: #374151; font-size: 16px; font-weight: 600;">
+                                                {{priority_3_title}}</p>
+                                            <p
+                                                style="margin: 6px 0 0; color: #6b7280; font-size: 14px; line-height: 1.6;">
+                                                {{priority_3_description}}</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Closing Message & Signature -->
+            <tr>
+                <td class="signature-section"
+                    style="padding: 32px 40px; background-color: #faf9f7; border-top: 1px solid #e5e7eb;">
+                    <p class="main-text" style="margin: 0 0 24px; color: #374151; font-size: 17px; line-height: 1.75;">
+                        {{closing_message}}
+                    </p>
+                    <p style="margin: 0; color: #374151; font-size: 17px; font-style: italic;">
+                        With appreciation,
+                    </p>
+                    <p
+                        style="margin: 16px 0 0; color: #1a2744; font-size: 18px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        {{executive_name}}
+                    </p>
+                    <p style="margin: 4px 0 0; color: #6b7280; font-size: 14px;">
+                        {{executive_title}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- CTA Button -->
+            <tr>
+                <td style="padding: 32px 40px; background-color: #ffffff; text-align: center;">
+                    <a href="{{cta_link}}"
+                        style="display: inline-block; padding: 16px 40px; background-color: #1a2744; color: #ffffff; text-decoration: none; font-size: 14px; font-weight: 600; border-radius: 4px; letter-spacing: 1px; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        {{cta_text}}
+                    </a>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style="padding: 32px 40px; background-color: #1a2744; text-align: center;">
+                    <p style="margin: 0 0 8px; color: #c9a962; font-size: 14px; font-weight: 600;">
+                        {{company}}
+                    </p>
+                    <p style="margin: 0 0 16px; color: rgba(255,255,255,0.6); font-size: 12px;">
+                        {{company_address}}
+                    </p>
+                    <p style="margin: 0; color: rgba(255,255,255,0.4); font-size: 11px;">
+                        <a href="{{unsubscribe_link}}"
+                            style="color: rgba(255,255,255,0.4); text-decoration: underline;">Update preferences</a>
+                        &nbsp;•&nbsp;
+                        <a href="{{view_online_link}}"
+                            style="color: rgba(255,255,255,0.4); text-decoration: underline;">View online</a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

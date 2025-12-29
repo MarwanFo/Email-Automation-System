@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{subject}}</title>
+    <!--
+    ╔══════════════════════════════════════════════════════════════════╗
+    ║  BLOG DIGEST / CONTENT ROUNDUP                                    ║
+    ║  Reader-friendly, content-first design                            ║
+    ╠══════════════════════════════════════════════════════════════════╣
+    ║  COLOR PALETTE:                                                   ║
+    ║  • Sage Green: #84cc16                                           ║
+    ║  • Forest Dark: #365314                                          ║
+    ║  • Warm Cream: #fefce8                                           ║
+    ║  • Paper White: #fafaf9                                          ║
+    ║  • Ink Black: #18181b                                            ║
+    ╚══════════════════════════════════════════════════════════════════╝
+    -->
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .content {
+                padding: 24px !important;
+            }
+
+            .article-image {
+                width: 100% !important;
+                height: 160px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #fafaf9; font-family: 'Georgia', 'Times New Roman', serif;">
+    <div style="display: none; max-height: 0px; overflow: hidden;">{{preheader_text}}</div>
+
+    <div style="background-color: #fafaf9; padding: 40px 20px;">
+        <table class="container" cellpadding="0" cellspacing="0" border="0" width="600"
+            style="max-width: 600px; margin: 0 auto; background-color: #ffffff; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.05);">
+
+            <!-- Header -->
+            <tr>
+                <td style="padding: 32px 40px; border-bottom: 3px solid #84cc16; text-align: center;">
+                    <p
+                        style="margin: 0 0 4px; color: #84cc16; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        {{digest_label}}</p>
+                    <h1 style="margin: 0; color: #18181b; font-size: 28px; font-weight: 400;">{{digest_title}}</h1>
+                    <p style="margin: 12px 0 0; color: #71717a; font-size: 14px;">{{digest_date}}</p>
+                </td>
+            </tr>
+
+            <!-- Editor's Note -->
+            <tr>
+                <td class="content" style="padding: 32px 40px;">
+                    <p style="margin: 0; color: #52525b; font-size: 17px; line-height: 1.8;">
+                        {{editors_note}}
+                    </p>
+                </td>
+            </tr>
+
+            <!-- Featured Article -->
+            <tr>
+                <td style="padding: 0 40px 32px;">
+                    <div style="background-color: #fefce8; border-radius: 12px; overflow: hidden;">
+                        <div class="article-image"
+                            style="width: 100%; height: 200px; background: linear-gradient(135deg, #84cc16 0%, #365314 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 48px;">{{featured_emoji}}</span>
+                        </div>
+                        <div style="padding: 24px;">
+                            <span
+                                style="display: inline-block; padding: 4px 10px; background-color: #84cc16; color: #365314; font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">Featured</span>
+                            <h2
+                                style="margin: 12px 0 8px; color: #18181b; font-size: 22px; font-weight: 700; line-height: 1.3;">
+                                {{featured_title}}</h2>
+                            <p style="margin: 0 0 16px; color: #71717a; font-size: 15px; line-height: 1.6;">
+                                {{featured_excerpt}}</p>
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td
+                                        style="color: #a1a1aa; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                        {{featured_read_time}} • {{featured_category}}
+                                    </td>
+                                </tr>
+                            </table>
+                            <a href="{{featured_link}}"
+                                style="display: inline-block; margin-top: 16px; color: #365314; font-size: 14px; font-weight: 600; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">Read
+                                Article →</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- More Articles -->
+            <tr>
+                <td style="padding: 0 40px 32px;">
+                    <h3
+                        style="margin: 0 0 20px; color: #18181b; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        More This Week</h3>
+
+                    <!-- Article 1 -->
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                        style="border-bottom: 1px solid #e4e4e7; padding-bottom: 20px; margin-bottom: 20px;">
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <span
+                                    style="display: inline-block; padding: 3px 8px; background-color: #f4f4f5; color: #71717a; font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">{{article_1_category}}</span>
+                                <h4
+                                    style="margin: 8px 0; color: #18181b; font-size: 17px; font-weight: 600; line-height: 1.3;">
+                                    <a href="{{article_1_link}}"
+                                        style="color: #18181b; text-decoration: none;">{{article_1_title}}</a>
+                                </h4>
+                                <p style="margin: 0; color: #71717a; font-size: 14px; line-height: 1.5;">
+                                    {{article_1_excerpt}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #a1a1aa; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{article_1_read_time}}</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- Article 2 -->
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                        style="border-bottom: 1px solid #e4e4e7; padding-bottom: 20px; margin-bottom: 20px;">
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <span
+                                    style="display: inline-block; padding: 3px 8px; background-color: #f4f4f5; color: #71717a; font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">{{article_2_category}}</span>
+                                <h4
+                                    style="margin: 8px 0; color: #18181b; font-size: 17px; font-weight: 600; line-height: 1.3;">
+                                    <a href="{{article_2_link}}"
+                                        style="color: #18181b; text-decoration: none;">{{article_2_title}}</a>
+                                </h4>
+                                <p style="margin: 0; color: #71717a; font-size: 14px; line-height: 1.5;">
+                                    {{article_2_excerpt}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #a1a1aa; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{article_2_read_time}}</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- Article 3 -->
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <span
+                                    style="display: inline-block; padding: 3px 8px; background-color: #f4f4f5; color: #71717a; font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; border-radius: 4px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">{{article_3_category}}</span>
+                                <h4
+                                    style="margin: 8px 0; color: #18181b; font-size: 17px; font-weight: 600; line-height: 1.3;">
+                                    <a href="{{article_3_link}}"
+                                        style="color: #18181b; text-decoration: none;">{{article_3_title}}</a>
+                                </h4>
+                                <p style="margin: 0; color: #71717a; font-size: 14px; line-height: 1.5;">
+                                    {{article_3_excerpt}}</p>
+                                <p
+                                    style="margin: 8px 0 0; color: #a1a1aa; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                                    {{article_3_read_time}}</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- CTA -->
+            <tr>
+                <td style="padding: 32px 40px; background-color: #365314; text-align: center;">
+                    <p style="margin: 0 0 16px; color: #ffffff; font-size: 16px;">{{cta_message}}</p>
+                    <a href="{{cta_link}}"
+                        style="display: inline-block; padding: 14px 32px; background-color: #84cc16; color: #365314; text-decoration: none; font-size: 14px; font-weight: 700; border-radius: 6px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">{{cta_text}}</a>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td style="padding: 32px 40px; text-align: center; border-top: 1px solid #e4e4e7;">
+                    <p
+                        style="margin: 0 0 8px; color: #18181b; font-size: 14px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+                        {{company}}</p>
+                    <p style="margin: 0 0 16px; color: #a1a1aa; font-size: 12px;">{{company_address}}</p>
+                    <p style="margin: 0; color: #a1a1aa; font-size: 11px;">
+                        <a href="{{unsubscribe_link}}"
+                            style="color: #a1a1aa; text-decoration: underline;">Unsubscribe</a>
+                        &nbsp;•&nbsp;
+                        <a href="{{preferences_link}}"
+                            style="color: #a1a1aa; text-decoration: underline;">Preferences</a>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
