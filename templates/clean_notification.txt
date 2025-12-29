@@ -1,0 +1,32 @@
+{{subject}}
+================================================================================
+
+Hey {{first_name}},
+
+{{main_message}}
+
+{% if action_required %}
+ACTION NEEDED: {{action_required}}
+{% endif %}
+
+{% if details %}
+DETAILS
+-------
+{{details}}
+{% endif %}
+
+{% if link %}
+Learn more: {{link}}
+{% endif %}
+
+---
+
+Best regards,
+{{sender_name}}
+{{company}}
+
+---
+
+This is an automated notification from {{company}}.
+To update your preferences: {{preferences_link}}
+To unsubscribe: {{unsubscribe_link}}
